@@ -6,7 +6,8 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: "center",
     padding: 20,
-    backgroundColor: "#0f172a"
+    backgroundColor: "#0f172a",
+    minHeight: "100%"
   },
 
   containerLogin: {
@@ -68,21 +69,79 @@ export default StyleSheet.create({
     textAlign: "center"
   },
 
-  card: {
-    backgroundColor: "#1e293b",
-    padding: 15,
-    borderRadius: 15,
-    width: "100%",
-    alignItems: "center",
-    marginBottom: 15
+grid: {
+  flexDirection: "column",
+  alignItems: "center"
+},
+
+imagemGrid: {
+  width: 120,
+  height: 120,
+  borderRadius: 12,
+  borderWidth: 2,
+  borderColor: "#facc15",
+  resizeMode: "cover"
+},
+
+  tooltip: {
+    position: "absolute",
+    top: -80,
+    left: -20,
+    width: 180,
+    backgroundColor: "#020617",
+    padding: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#facc15",
+    zIndex: 10
   },
 
-  imagem: {
-    width: "100%",
-    height: 180,
-    borderRadius: 10,
-    marginBottom: 10,
-    resizeMode: "contain"
+  nome: {
+    fontSize: 16,
+    fontWeight: "bold",
+    marginBottom: 5
+  },
+
+  tituloTooltip: {
+    color: "#cbd5f5",
+    fontSize: 12
+  },
+
+imagemPersonagem: {
+  width: "100%",
+  height: 260,
+  borderRadius: 15,
+  marginBottom: 20,
+  resizeMode: "contain",
+  backgroundColor: "#020617"
+},
+  nomePersonagem: {
+    fontSize: 26,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 10
+  },
+
+  textoLore: {
+    color: "#e2e8f0",
+    fontSize: 15,
+    lineHeight: 22,
+    textAlign: "center"
+  },
+  imagemPerfil: {
+  width: 120,
+  height: 120,
+  borderRadius: 60,
+  marginBottom: 15,
+  borderWidth: 2,
+  borderColor: "#38bdf8"
+},
+
+nomePerfil: {
+  fontSize: 22,
+  color: "#fff",
+  fontWeight: "bold",
+  marginBottom: 10
 }
 
 })
